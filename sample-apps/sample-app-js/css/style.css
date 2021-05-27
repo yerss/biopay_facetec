@@ -172,7 +172,7 @@
     height: 30px;
     margin: 10px auto 0;
     color: white;
-    background: rgb(65, 127, 178);
+    background: rgb(65, 146, 178);
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
@@ -184,14 +184,14 @@
   .big-button:disabled, .big-button[disabled],
   .medium-button:disabled, .medium-button[disabled] {
     cursor: not-allowed;
-    background: rgba(65, 127, 178, 0.4) !important;
+    background: rgb(65, 152, 178) !important;
     color: white !important;
   }
 
   @media (hover: hover) {
     .big-button:hover:enabled,
     .medium-button:hover:enabled {
-      background-color: rgb(57, 110, 153);
+      background-color: rgb(57, 142, 153);
       color: white !important;
     }
   }
@@ -206,10 +206,10 @@
     width: 60%;
     margin: 0px auto;
     bottom: 15px;
-    color: rgb(64, 127, 178);
+    color: rgb(255, 255, 255);
     display: none;
     font-size: 18px;
-    background-color: rgba(65, 127, 178, 0.15);
+    background-color: rgb(20, 134, 179);
     display: block;
     border-radius: 5px;
     padding: 8px;
@@ -274,7 +274,7 @@
   }
 
   footer span p a:hover{
-    color: rgb(65, 127, 178);
+    color: rgb(76, 192, 255);
     text-decoration: underline;
   }
 
@@ -616,7 +616,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    color: rgb(64, 127, 178);
+    color: rgb(37, 211, 255);
   }
 
   .display-none {
@@ -670,10 +670,10 @@
 
 #additional-screen-image-and-text>h2 {
   font-size: 24px;
-  color: rgb(64, 127, 178);
+  color: rgb(88, 181, 255);
 }
 
 #additional-screen-text {
-  color: rgb(64, 127, 178);
+  color: rgb(87, 171, 255);
   font-size: 16px;
 }

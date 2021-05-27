@@ -63,7 +63,7 @@ var FaceTecStrings = {
   "FaceTec_camera_feed_issue_action": "Try Again Anyway",
   "FaceTec_camera_feed_issue_action_firefox_permissions_error": "OK",
 
-  "FaceTec_camera_permission_header": "Enable Camera",
+  "FaceTec_camera_permission_header": "Камера не доступна",
   "FaceTec_camera_permission_message": "Camera permissions disabled.<br/>Please check your operating system and browser settings.",
   "FaceTec_action_ok": "OK",
 

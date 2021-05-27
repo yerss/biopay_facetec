@@ -73,7 +73,7 @@ SampleApp = (function () {
         }
         else {
             // Show early exit message to screen.  If this occurs, please check logs.
-            SampleAppUtilities.displayStatus("Session exited early, see logs for more details. Latest getStatus(): " + FaceTecSDK.getStatus());
+            // SampleAppUtilities.displayStatus("Session exited early, see logs for more details. Latest getStatus(): " + FaceTecSDK.getStatus());
             // Check for server offline
             if (isNetworkResponseServerIsOffline(latestNetworkResponseStatus) === true) {
                 showAdditionalScreensServerIsDown();
