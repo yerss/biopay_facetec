@@ -16,15 +16,15 @@ var ThemeHelpers = (function () {
         if (theme === "Config Wizard Theme") {
             currentCustomization = Config.retrieveConfigurationWizardCustomization(FaceTecSDK);
             // Set the developer element FaceTec loading session token text color
-            document.getElementById("loading-session-token-text").style.color = "rgb(64, 127, 178)";
+            document.getElementById("loading-session-token-text").style.color = "rgb(37,211,255)";
         }
         else if (theme === "FaceTec Theme") {
             // using default customizations
             // Set the developer element FaceTec loading session token text color
-            document.getElementById("loading-session-token-text").style.color = "rgb(64, 127, 178)";
+            document.getElementById("loading-session-token-text").style.color = "rgb(44,213,255)";
         }
         else if (theme === "Pseudo-Fullscreen") {
-            var primaryColor = "rgb(43, 43, 43)"; // black
+            var primaryColor = "rgb(36,210,255)"; // black
             var secondaryColor = "rgb(59, 195, 113)"; // green
             var backgroundColor = "rgb(238, 246, 248)"; // white
             var font = "Futura,'Trebuchet MS',Arial,sans-serif";
