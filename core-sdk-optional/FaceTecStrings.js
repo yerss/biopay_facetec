@@ -71,7 +71,7 @@ var FaceTecStrings = {
   "FaceTec_enter_fullscreen_message": "Before we begin, please click the button below to open full screen mode",
   "FaceTec_enter_fullscreen_action": "Open Full Screen",
 
-  "FaceTec_initializing_camera": "Encrypting Camera Feed...",
+  "FaceTec_initializing_camera": "Шифрование видеопотока ...",
   "FaceTec_initializing_camera_still_loading": "Encrypting Camera Feed...",
 
   "FaceTec_idscan_type_selection_header": "Please Select Your<br/>ID Document Type",
