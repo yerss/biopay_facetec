@@ -23,7 +23,7 @@ var FaceTecStrings = {
   "FaceTec_instructions_message_ready_1_mobile": "Обведите свое лицо в овал",
   "FaceTec_instructions_message_ready_2_mobile": "Нажмите \"Я готов и приближайтесь\"",
 
-  "FaceTec_action_im_ready": "Я ГОТОВ",
+  "FaceTec_action_im_ready": "dadasdas",
   "FaceTec_presession_frame_your_face": "Frame Your Face In The Oval",
   "FaceTec_presession_look_straight_ahead": "Look Straight Ahead",
   "FaceTec_presession_hold_steady3": "Hold Steady for: 3",
