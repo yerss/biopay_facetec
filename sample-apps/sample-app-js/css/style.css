@@ -128,7 +128,7 @@
     width: 640px;
     height: 430px;
     margin: 0 auto;
-    border: 2px solid rgb(65, 127, 178);
+    border: 2px solid rgb(3, 183, 196);
     border-radius: 20px;
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -158,7 +158,7 @@
     height: 40px;
     margin: 5px auto 0;
     color: white;
-    background: rgb(65, 127, 178);
+    background: rgb(0, 166, 195);
     border-radius: 8px;
     font-size: 20px;
     font-weight: 500;
