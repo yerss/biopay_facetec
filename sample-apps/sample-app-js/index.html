@@ -46,17 +46,23 @@
   <div class="wrapping-box-container">
     <div id="main-interface">
       <div id="controls">
-        <div id="vocal-icon-container">
-          <div><img id="vocal-guidance-icon-minimal" disabled class="vocal-icon" src="../../sample-app-resources/images/vocal_minimal.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>
-          <div><img id="vocal-guidance-icon-full" disabled class="vocal-icon vocal-guidance-icon-full display-none" src="../../sample-app-resources/images/vocal_full.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>
-          <div><img id="vocal-guidance-icon-off" disabled class="vocal-icon vocal-guidance-icon-off display-none" src="../../sample-app-resources/images/vocal_off.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>
-        </div>
-        <button id="liveness-button" disabled onclick="SampleApp.onLivenessCheckPressed()" class="big-button">3D Liveness Check</button>
-        <button id="enroll-button" disabled onclick="SampleApp.onEnrollUserPressed()" class="big-button">Enroll User</button>
-        <button id="authenticate-button" disabled onclick="SampleApp.onAuthenticateUserPressed()" class="big-button">Authenticate User</button>
-        <button id="id-scan-button" disabled onclick="SampleApp.onPhotoIDMatchPressed()" class="big-button">Photo ID Match</button>
-        <button id="audit-trail-button" disabled onclick="SampleApp.onViewAuditTrailPressed()" class="medium-button">View Audit Trail</button>
-        <button id="design-showcase-button" disabled onclick="SampleApp.onDesignShowcasePressed()" class="medium-button">Design Showcase</button>
+<!--        <div id="vocal-icon-container">-->
+<!--          <div><img id="vocal-guidance-icon-minimal" disabled class="vocal-icon" src="../../sample-app-resources/images/vocal_minimal.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>-->
+<!--          <div><img id="vocal-guidance-icon-full" disabled class="vocal-icon vocal-guidance-icon-full display-none" src="../../sample-app-resources/images/vocal_full.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>-->
+<!--          <div><img id="vocal-guidance-icon-off" disabled class="vocal-icon vocal-guidance-icon-off display-none" src="../../sample-app-resources/images/vocal_off.png" onclick="SampleApp.onVocalGuidanceSettingsButtonPressed()"></div>-->
+<!--        </div>-->
+<!--        <button id="liveness-button" disabled onclick="SampleApp.onLivenessCheckPressed()" class="big-button">3D Liveness Check</button>-->
+        <button id="enroll-button" disabled onclick="SampleApp.onEnrollUserPressed()" class="big-button">Start Face scan</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<!--        <button id="authenticate-button" disabled onclick="SampleApp.onAuthenticateUserPressed()" class="big-button">Authenticate User</button>-->
+<!--        <button id="id-scan-button" disabled onclick="SampleApp.onPhotoIDMatchPressed()" class="big-button">Photo ID Match</button>-->
+<!--        <button id="audit-trail-button" disabled onclick="SampleApp.onViewAuditTrailPressed()" class="medium-button">View Audit Trail</button>-->
+<!--        <button id="design-showcase-button" disabled onclick="SampleApp.onDesignShowcasePressed()" class="medium-button">Design Showcase</button>-->
         <p id="status">Initializing...</p>
       </div>
       <div id="additional-screen" display="flex">
@@ -69,18 +75,18 @@
       </div>
     </div>
     <div id="custom-logo-container">
-      <img src="../../sample-app-resources/images/FaceTec_Logo.png">
+      <img src="../../sample-app-resources/images/biopay.png">
     </div>
   </div>
   <footer>
     <span id="copy-right-section">
-      <p id="copy-right">&copy; 2021 FaceTec, Inc. &thinsp;&middot;&thinsp; Multiple US & International Patents Granted&thinsp;&middot;&thinsp; All Rights Reserved</p>
+      <p id="copy-right">&copy; 2021 BioPay</p>
       <hr class="hr display-none"></hr>
-      <p style="font-size: 1em"><a href="https://dev.facetec.com/policies/terms.html" target="_blank">Terms &amp; Conditions</a>&thinsp;&middot;&thinsp; <a href="https://dev.facetec.com/policies/privacy_site.html" target="_blank">Site Privacy Policy</a>&thinsp;&middot;&thinsp; <a href=https://dev.facetec.com/policies/privacy_sdk.html target="_blank">SDK Privacy Policy</a></p>
+<!--      <p style="font-size: 1em"><a href="https://dev.facetec.&lt;!&ndash;&ndash;&gt;com/policies/terms.html" target="_blank">Terms &amp; Conditions</a>&thinsp;&middot;&thinsp; <a href="https://dev.facetec.com/policies/privacy_site.html" target="_blank">Site Privacy Policy</a>&thinsp;&middot;&thinsp; <a href=https://dev.facetec.com/policies/privacy_sdk.html target="_blank">SDK Privacy Policy</a></p>-->
     </span>
     <div class="footer-bottom"></div>
   </footer>
-  <div id="copy-right-length">&copy; 2021 FaceTec, Inc. &thinsp;&middot;&thinsp; Multiple US & International Patents Granted&thinsp;&middot;&thinsp; All Rights Reserved</div>
+<!--  <div id="copy-right-length">&copy; 2021 FaceTec, Inc. &thinsp;&middot;&thinsp; Multiple US & International Patents Granted&thinsp;&middot;&thinsp; All Rights Reserved</div>-->
   <div class = "loading-session-token-container">
     <p id="loading-session-token-text">Network Connection Slow...</p>
   </div>
