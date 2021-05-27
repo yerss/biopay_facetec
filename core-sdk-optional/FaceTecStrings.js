@@ -16,12 +16,12 @@ var FaceTecStrings = {
   "FaceTec_feedback_move_web_even_closer": "Еще ближе",
   "FaceTec_feedback_use_even_lighting": "Свет лица ровнее",
 
-  "FaceTec_instructions_header_ready_desktop": "Get Ready For Your Video Selfie",
-  "FaceTec_instructions_header_ready_1_mobile": "Get Ready For",
-  "FaceTec_instructions_header_ready_2_mobile": "Your Video Selfie",
-  "FaceTec_instructions_message_ready_desktop": "Frame Your Face in the Oval, Press I'm Ready & Move Closer",
-  "FaceTec_instructions_message_ready_1_mobile": "Frame Your Face in the Oval,",
-  "FaceTec_instructions_message_ready_2_mobile": "Press I'm Ready & Move Closer",
+  "FaceTec_instructions_header_ready_desktop": "Приготовьтесь к видео-селфи",
+  "FaceTec_instructions_header_ready_1_mobile": "Приготовьтесь",
+  "FaceTec_instructions_header_ready_2_mobile": "К видео-селфи",
+  "FaceTec_instructions_message_ready_desktop": "Сформируйте лицо в овале, нажмите «Я готов» и подойдите ближе",
+  "FaceTec_instructions_message_ready_1_mobile": "Обведите свое лицо в овал",
+  "FaceTec_instructions_message_ready_2_mobile": "Нажмите \"Я готов и приближайтесь\"",
 
   "FaceTec_action_im_ready": "Я ГОТОВ",
   "FaceTec_presession_frame_your_face": "Frame Your Face In The Oval",
