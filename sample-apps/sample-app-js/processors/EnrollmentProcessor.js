@@ -78,7 +78,7 @@ var EnrollmentProcessor = /** @class */ (function () {
         // Part 5:  Make the Networking Call to Your Servers.  Below is just example code, you are free to customize based on how your own API works.
         //
         this.latestNetworkRequest = new XMLHttpRequest();
-        this.latestNetworkRequest.open("POST", Config.BaseURL + "/biometrics/enrollment");
+        this.latestNetworkRequest.open("POST", Config.BaseURL + "/enrollment");
         this.latestNetworkRequest.setRequestHeader("Content-Type", "application/json");
         this.latestNetworkRequest.setRequestHeader("X-Device-Key", Config.DeviceKeyIdentifier);
         this.latestNetworkRequest.setRequestHeader("X-User-Agent", FaceTecSDK.createFaceTecAPIUserAgentString(sessionResult.sessionId));

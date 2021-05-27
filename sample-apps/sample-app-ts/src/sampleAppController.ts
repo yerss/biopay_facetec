@@ -138,7 +138,7 @@ export var SampleApp = (function() {
     // Only handle session token error once
     let sessionTokenErrorHasBeenHandled = false;
     var XHR = new XMLHttpRequest();
-    XHR.open("GET", Config.BaseURL + "/session-token");
+    XHR.open("GET", Config.BaseURL + "/session");
     XHR.setRequestHeader("X-Device-Key", Config.DeviceKeyIdentifier);
     XHR.setRequestHeader("X-User-Agent", FaceTecSDK.createFaceTecAPIUserAgentString(""));
     XHR.onreadystatechange = function() {

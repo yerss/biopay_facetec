@@ -102,7 +102,7 @@ SampleApp = (function () {
         // Only handle session token error once
         var sessionTokenErrorHasBeenHandled = false;
         var XHR = new XMLHttpRequest();
-        XHR.open("GET", Config.BaseURL + "/session-token");
+        XHR.open("GET", Config.BaseURL + "/session");
         XHR.setRequestHeader("X-Device-Key", Config.DeviceKeyIdentifier);
         XHR.setRequestHeader("X-User-Agent", FaceTecSDK.createFaceTecAPIUserAgentString(""));
         XHR.onreadystatechange = function () {
