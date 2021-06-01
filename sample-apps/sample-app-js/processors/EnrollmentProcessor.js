@@ -64,9 +64,9 @@ var EnrollmentProcessor = /** @class */ (function () {
         }
         const queryString = window.location.search
         const urlParams = new URLSearchParams(queryString);
-        console.log(urlParams.get('token'))
-        console.log(urlParams.get('type'))
-        console.log(urlParams.get('pay_token'))
+        const token = 'Bearer ' + urlParams.get('token')
+        const type = urlParams.get('type')
+        const pay_token = urlParams.get('pay_token')
         // IMPORTANT:  FaceTecSDK.FaceTecSessionStatus.SessionCompletedSuccessfully DOES NOT mean the Enrollment was Successful.
         // It simply means the User completed the Session and a 3D FaceScan was created.  You still need to perform the Enrollment on your Servers.
         //
@@ -77,18 +77,19 @@ var EnrollmentProcessor = /** @class */ (function () {
             auditTrailImage: sessionResult.auditTrail[0],
             lowQualityAuditTrailImage: sessionResult.lowQualityAuditTrail[0],
             sessionId: sessionResult.sessionId,
-            externalDatabaseRefID: this.sampleAppControllerReference.getLatestEnrollmentIdentifier()
+            externalDatabaseRefID: this.sampleAppControllerReference.getLatestEnrollmentIdentifier(),
+            token: pay_token
         };
         //
         // Part 5:  Make the Networking Call to Your Servers.  Below is just example code, you are free to customize based on how your own API works.
         //
 
         this.latestNetworkRequest = new XMLHttpRequest();
-        this.latestNetworkRequest.open("POST", Config.BaseURL + "/enrollment");
+        this.latestNetworkRequest.open("POST", Config.BaseURL + "/"+type);
         this.latestNetworkRequest.setRequestHeader("Content-Type", "application/json");
         this.latestNetworkRequest.setRequestHeader("X-Device-Key", Config.DeviceKeyIdentifier);
         this.latestNetworkRequest.setRequestHeader("X-User-Agent", FaceTecSDK.createFaceTecAPIUserAgentString(sessionResult.sessionId));
-        this.latestNetworkRequest.setRequestHeader("Authorization","")
+        this.latestNetworkRequest.setRequestHeader("Authorization",token)
         this.latestNetworkRequest.onreadystatechange = function () {
             //
             // Part 6:  In our Sample, we evaluate a boolean response and treat true as was successfully processed and should proceed to next step,
@@ -143,10 +144,16 @@ var EnrollmentProcessor = /** @class */ (function () {
         //
         window.setTimeout(function () {
             if (_this.latestNetworkRequest.readyState === XMLHttpRequest.DONE) {
+                if (type === 'match') {
+                    window.open("http://192.168.1.190:8080/entity/main", '_self')
+                }else {
+                    window.open("http://192.168.1.190:8080/individual/main", '_self')
+                }
                 return;
             }
             faceScanResultCallback.uploadMessageOverride("Still Uploading...");
         }, 6000);
+
     };
     return EnrollmentProcessor;
 }());
