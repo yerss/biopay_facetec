@@ -1,6 +1,5 @@
 var FaceTecStrings = {
   "FaceTec_accessibility_cancel_button": "Отменить",
-
   "FaceTec_feedback_center_face": "Подставьте лицо по центру",
   "FaceTec_feedback_face_not_found": "Подставьте лицо по рамке",
   "FaceTec_feedback_move_phone_away": "Отдалитесь",

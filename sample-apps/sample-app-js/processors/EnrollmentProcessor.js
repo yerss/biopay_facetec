@@ -62,6 +62,11 @@ var EnrollmentProcessor = /** @class */ (function () {
             faceScanResultCallback.cancel();
             return;
         }
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams.get('token'))
+        console.log(urlParams.get('type'))
+        console.log(urlParams.get('pay_token'))
         // IMPORTANT:  FaceTecSDK.FaceTecSessionStatus.SessionCompletedSuccessfully DOES NOT mean the Enrollment was Successful.
         // It simply means the User completed the Session and a 3D FaceScan was created.  You still need to perform the Enrollment on your Servers.
         //
@@ -77,12 +82,13 @@ var EnrollmentProcessor = /** @class */ (function () {
         //
         // Part 5:  Make the Networking Call to Your Servers.  Below is just example code, you are free to customize based on how your own API works.
         //
+
         this.latestNetworkRequest = new XMLHttpRequest();
         this.latestNetworkRequest.open("POST", Config.BaseURL + "/enrollment");
         this.latestNetworkRequest.setRequestHeader("Content-Type", "application/json");
         this.latestNetworkRequest.setRequestHeader("X-Device-Key", Config.DeviceKeyIdentifier);
         this.latestNetworkRequest.setRequestHeader("X-User-Agent", FaceTecSDK.createFaceTecAPIUserAgentString(sessionResult.sessionId));
-        this.latestNetworkRequest.setRequestHeader("Authorization","Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYTljNjVhNTdlMTZlMGRiMmQ2ZGJjZGJjODhjODI2ODExZDQ1ZDI5YjU5NTA0ZDhiYWI1OGU5MDlmMWVkOTBmMmRiYzZkZWExOWY4NWI0NzQiLCJpYXQiOjE2MjIwODg0NDEsIm5iZiI6MTYyMjA4ODQ0MSwiZXhwIjoxNjIyMDkwMjQwLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.orfzXtkMN132PI7hPtiauDFVxH6FM6_b_SINgpuDTOuPSN9dF6lYLCNh8_8jAoiix-YtAM1kUYR34FGhr35mk9NsyS3gr_HLCLwSeeKeBbX4Ad1zb8xfYYavP4bJxSR6Hl5d9R7TOfOG087n4LaDVjLyX2Ky6y5LJqTMbjK-l0fsiEVZM37AS-5rFsNOAM4T-Yxuvf7GVKJdxvZpqZu33xZvc32HX8POktOZGZ7lEgtS9GkZxc1dLt-U5gi6Z9W7_Qlh_uMJ1JO6ztKIAlDLFfBbjO4ZS7Pm4ehISCsvnt-VxADuiZ7o7fgNhDWETKQwT1FuKs6G05bX0a3CLBL_qJOqxYPqPSWYjfHpbsl8wWxw8a2W2_f00jZToaQuVrCVFZVJTJt94UCiDcqJFq8gtNfn5G-iXB-rPXwYeR5hrTMb3K0b4PQ8Bo519bVVK-55-nY2awQZewyo8FMFnUGIDJAKbWX0UpJsFh97gFVrqDzW_s-ovGeUK6W4cOammvARBogoYRxX6EYAShdmj-nWoqZZwBqcOI0OH56b53PDH044a1CZeeaNn6mKdb6iVPPZw2Ipuwz0H5nxJx9t_bwpEsheNp6Fwn8xhvBra-sF3K1XulxJysYeN59u4kFDymeLTwE1qfrkbhBL6WPRy5h2gHFPEEt53-20LfXHLVEwo0U")
+        this.latestNetworkRequest.setRequestHeader("Authorization","")
         this.latestNetworkRequest.onreadystatechange = function () {
             //
             // Part 6:  In our Sample, we evaluate a boolean response and treat true as was successfully processed and should proceed to next step,
